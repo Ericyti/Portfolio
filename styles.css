@@ -1,0 +1,677 @@
+#title .navbar-brand {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#title  {
+    font-family: Georgia;
+    font-size: 1.5rem;
+    background-color: #D6B588;
+    position: sticky;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.nav-item {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#intro {
+    background-color: beige;
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: auto;
+    padding: 45px 15px;
+    margin-left: -65px;
+    margin-right: -15px;
+}
+
+#intro button {
+    background-color: #D6B588;
+    color: black;
+}
+
+#introDesc{
+    font-family: Georgia;
+    font-size: 1.5rem;
+}
+
+.title-image {
+    margin-left: 100px; /* Move the image 20px to the right */
+    margin-right: 20px; /* Move the image 20px to the left */
+    margin-top: 10px; /* Move the image 10px down */
+    margin-bottom: 10px; /* Move the image 10px up */
+}
+
+#biography {
+    background-color: #D6B588;
+    font-family: Georgia;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.biography-image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 250px; /* Set width to make it a square */
+    height: 250px; /* Set height to match the width */
+    object-fit: cover; /* Ensures the image covers the container */
+    padding: 25px 15px;
+    margin-left: -65px;
+    transform: translate(70px, 10px);
+}
+
+#biographyText {
+    font-family: Georgia;
+    text-align: center;
+    font-size: 2rem;
+    transform: translate(0px, 100px);
+}
+
+.biography-image-text {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 1rem;
+    transform: translate(40px, 2px);
+}
+
+#biographyName {
+    transform: translate(0px, 50px);
+}
+
+#skills {
+    background-color: beige;
+    padding: 60px;
+}
+
+#skillsName {
+    font-family: Georgia;
+    margin-bottom: 35px; /* Space between title and content */
+    transform: translate(285px, 0px);
+}
+
+#skillsContent {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the start of the container */
+    gap: 1000px; /* Space between icons and text */
+    font-family: Georgia;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#gitIcon, #codingIcon, #ideIcon{
+    font-size: 8rem;
+    transform: translate(275px,0px);
+}
+
+#gitText,
+#codingText,
+#ideText {
+    font-size: 1rem; /* Adjust text size if needed */
+    margin-top: 10px; /* Space between icon and text */
+    text-align: Center;
+    transform: translate(275px,0px);
+}
+
+#Experience {
+    background-color: #D6B588;
+    padding-bottom: 0;
+    margin-bottom: 0; 
+}
+
+body{
+    background-color: beige;
+    margin-top:0;
+}
+
+.main-timeline {
+    position: relative;
+    padding: 0; /* Ensure there's no padding */
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #c6c6c6;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -3px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #c6c6c6;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #c6c6c6;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid #c6c6c6;
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 36px
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+}
+
+.main-timeline .description {
+    margin-bottom: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
+
+#Presentations {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: beige;
+    margin-top: 0;
+}
+
+#Presentations h2 {
+    font-family: Georgia, serif;
+    font-weight: bold; 
+}
+
+.Presentations-image {
+    width: 20%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#expName {
+    padding: 40px;
+    font-family: Georgia;
+    transform: translate(395px, 0px);
+}
+
+html {
+    background-color: beige;
+}
+
+#footer {
+    background-color: beige;
+    text-align: center;
+}
+
+#preName {
+    font-family: Georgia;
+    transform: translate(325px, 0px);
+    padding: 20px;
+}
+
+.Git-item:hover {
+    color: purple;
+}
+
+.Code-item:hover {
+    color: turquoise;
+}
+
+.Windows-item:hover {
+    color: blue;
+}
+
+#Contact {
+    background-color: #D6B588;
+    padding: 40px;
+}
+
+#contactText {
+    font-family: Georgia;
+}
+
+#BUTTON {
+    background-color: #D6B588;
+}
+
+.email-image {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    display: block; 
+    transform: translate(0px, 75px);
+}
+
+body {
+    background-color: beige;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+#title {
+    background-color: #D6B588;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#intro {
+    background-color: beige;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 45px 15px;
+}
+
+#intro button {
+    background-color: #D6B588;
+    color: black;
+}
+
+.title-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#biography {
+    background-color: #D6B588;
+    text-align: center;
+    padding: 20px;
+}
+
+.biography-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.biography-image-text, #biographyText {
+    font-size: 1.5rem;
+}
+
+#skills {
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+}
+
+#skillsContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#Experience {
+    background-color: #D6B588;
+    padding: 20px;
+}
+
+.main-timeline {
+    padding: 0;
+}
+
+.timeline-content {
+    padding: 10px;
+}
+
+#Presentations {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: beige;
+}
+
+.Presentations-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#Contact {
+    background-color: #D6B588;
+    padding: 20px;
+}
+
+.email-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    #title .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    #intro {
+        font-size: 2rem;
+        padding: 30px 10px;
+    }
+
+    #intro button {
+        font-size: 1rem;
+    }
+
+    .title-image {
+        max-width: 100%;
+    }
+
+    #biography {
+        padding: 10px;
+    }
+
+    .biography-image {
+        max-width: 200px;
+    }
+
+    #skillsContent {
+        flex-direction: column;
+    }
+
+    .skill-item {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .main-timeline .timeline-content {
+        padding: 10px;
+    }
+
+    #Presentations {
+        padding: 5% 10%;
+    }
+
+    .Presentations-image {
+        max-width: 250px;
+    }
+
+    #Contact {
+        padding: 10px;
+    }
+
+    .email-image {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    #title {
+        font-size: 1.2rem;
+    }
+
+    #intro {
+        font-size: 1.5rem;
+        padding: 20px 5px;
+    }
+
+    #intro button {
+        font-size: 0.875rem;
+    }
+
+    .title-image {
+        max-width: 100%;
+    }
+
+    #biography {
+        padding: 5px;
+    }
+
+    .biography-image {
+        max-width: 150px;
+    }
+
+    #skillsContent {
+        flex-direction: column;
+    }
+
+    .skill-item {
+        font-size: 0.8rem;
+    }
+
+    .main-timeline .timeline-content {
+        padding: 5px;
+    }
+
+    #Presentations {
+        padding: 3% 5%;
+    }
+
+    .Presentations-image {
+        max-width: 200px;
+    }
+
+    #Contact {
+        padding: 5px;
+    }
+
+    .email-image {
+        max-width: 150px;
+    }
+}
