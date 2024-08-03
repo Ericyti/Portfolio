@@ -9,8 +9,6 @@
     font-size: 1.5rem;
     background-color: #D6B588;
     position: sticky;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
 }
 
 .nav-item {
@@ -458,14 +456,6 @@ body {
     background-color: beige;
     margin: 0;
     font-family: Georgia, serif;
-}
-
-#title {
-    background-color: #D6B588;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
